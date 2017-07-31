@@ -1,23 +1,5 @@
 # http://eslint.org/docs/rules/
 # https://standardjs.com/
-ecmaFeatures:
-  binaryLiterals: false                    # enable binary literals
-  blockBindings: false                     # enable let and const (aka block bindings)
-  defaultParams: false                     # enable default function parameters
-  forOf: false                             # enable for-of loops
-  generators: false                        # enable generators
-  objectLiteralComputedProperties: false   # enable computed object literal property names
-  objectLiteralDuplicateProperties: false  # enable duplicate object literal properties in strict mode
-  objectLiteralShorthandMethods: false     # enable object literal shorthand methods
-  objectLiteralShorthandProperties: false  # enable object literal shorthand properties
-  octalLiterals: false                     # enable octal literals
-  regexUFlag: false                        # enable the regular expression u flag
-  regexYFlag: false                        # enable the regular expression y flag
-  templateStrings: false                   # enable template strings
-  unicodeCodePointEscapes: false           # enable code point escapes
-  jsx: true                                # enable JSX
-
-
 env:
   browser: true # browser global variables.
   node: true # Node.js global variables and Node.js scoping.
@@ -44,10 +26,6 @@ env:
   embertest: false # Ember test helper globals.
   webextensions: false # WebExtensions globals.
   greasemonkey: false # GreaseMonkey globals.
-
-globals:
-  # e.g. angular: true
-
 
 plugins: [
   # e.g. react (must run `npm install eslint-plugin-react` first)
@@ -270,7 +248,7 @@ rules:
   one-var-declaration-per-line: 0         # require or disallow newlines around variable declarations
   operator-assignment: 0                  # require or disallow assignment operator shorthand where possible
   operator-linebreak: 2                   # enforce consistent linebreak style for operators
-  padded-blocks: 2                        # require or disallow padding within blocks
+  padded-blocks: 0                        # require or disallow padding within blocks
   padding-line-between-statements: 0      # require or disallow padding lines between statements
   quote-props: 0                          # require quotes around object literal property names
   quotes: [2, "single"]                   # enforce the consistent use of either backticks, double, or single quotes
